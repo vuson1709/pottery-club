@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pottery Club</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mooli&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="main-header">
+      <img
+        class="main-logo"
+        src="./resources/logo.svg"
+        alt="pottery-club-logo"
+      />
+      <nav>
+        <ul class="nav-list">
+          <li><a href="#about-us">About us</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="explore">
+            <a href="#" class="exploreJS">Explore Workshops</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header class="mobile-header">
+      <img
+        class="main-logo"
+        src="./resources/logo.svg"
+        alt="pottery-club-logo"
+      />
+      <a href="#">About us</a>
+      <a href="#">Contact</a>
+      <a href="#" class="exploreJS">Explore Workshops</a>
+    </header>
+
+    <section class="banner">
+      <div class="banner-text">
+        <img
+          class="banner-logo"
+          src="./resources/logo.svg"
+          alt="pottery-club-logo"
+        />
+        <h1>Create ceramics, gian experience</h1>
+        <a class="explore exploreJS" href="#">Explore Workshops</a>
+      </div>
+    </section>
+
+    <main>
+      <section id="about-us" class="about-us">
+        <h2>About us</h2>
+        <div class="about-us-text">
+          <p>
+            We bring together like-minded people who love creating things with
+            their own hands.
+          </p>
+          <p>
+            Here in Pottery Club Campo de Ourique you can learn how to make
+            simple yet beautiful and very useful cups, dishes, vases and
+            basically anything you want.
+          </p>
+          <p>
+            Note! You can attend any event for free but tipping our beloved
+            teachers would be extremely appreciated.
+          </p>
+        </div>
+
+        <div class="about-us-images">
+          <img
+            src="./resources/img-aboutus-1.jpg"
+            alt="two people making pottery"
+          />
+          <img src="./resources/img-aboutus-2.jpg" alt="making pottery" />
+        </div>
+      </section>
+
+      <section id="explore-workshops" class="">
+        <div id="explore-workshops-modal-content" class="">
+          <span class="modal-close">x</span>
+          <h2>Upcoming Workshops</h2>
+          <div class="workshops-container">
+            <div class="box baking-dish">
+              <img src="./resources/img-card-1.jpg" alt="baking dish" />
+              <div class="workshops-text">
+                <p class="price">€ Free</p>
+                <h3 class="class-name">Baking Dish</h3>
+                <p class="teacher">by Catarina Ferreira</p>
+                <span class="date">August 28</span>
+                <span class="time">15:00 / 3PM</span>
+                <button class="sign-up">Sign up</button>
+              </div>
+            </div>
+
+            <div class="box coffee">
+              <img
+                src="./resources/img-card-2.jpg"
+                alt="women decorate a tea cup"
+              />
+              <div class="workshops-text">
+                <p class="price">€ Free</p>
+                <h3 class="class-name">Coffee/Tea Cup</h3>
+                <p class="teacher">by Catarina Ferreira</p>
+                <span class="date">August 28</span>
+                <span class="time">15:00 / 3PM</span>
+                <button class="sign-up">Sign up</button>
+              </div>
+            </div>
+
+            <div class="box floral-vase">
+              <img
+                src="./resources/img-card-3.jpg"
+                alt="decorate floral vase"
+              />
+              <div class="workshops-text">
+                <p class="price">€ Free</p>
+                <h3 class="class-name">Floral Vase</h3>
+                <p class="teacher">by Catarina Ferreira</p>
+                <span class="date">August 28</span>
+                <span class="time">15:00 / 3PM</span>
+                <button class="sign-up">Sign up</button>
+              </div>
+            </div>
+
+            <div class="box soap-tray">
+              <img src="./resources/img-card-4.jpg" alt="soap tray" />
+              <div class="workshops-text">
+                <p class="price">€ Free</p>
+                <h3 class="class-name">Soap Tray</h3>
+                <p class="teacher">by Catarina Ferreira</p>
+                <span class="date">August 28</span>
+                <span class="time">15:00 / 3PM</span>
+                <button class="sign-up">Sign up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="form" class="modal hidden">
+        <form action="" class="modal-content" id="form-details">
+          <span class="modal-close">x</span>
+          <fieldset>
+            <legend>Class Registration</legend>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder=" Your full name"
+            />
+            <label for="email">Email:</label>
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder=" Your email address"
+            />
+            <label for="class">Class:</label>
+            <select name="class" id="class">
+              <option disabled selected hidden>Choose your class</option>
+              <option value="Baking Dish">Baking Dish</option>
+              <option value="Coffee/Tea Cup">Coffee/Tea Cup</option>
+              <option value="Floral Vase">Floral Vase</option>
+              <option value="Soap Tray">Soap Tray</option>
+            </select>
+            <button class="form-btn" type="submit">Submit</button>
+          </fieldset>
+        </form>
+      </section>
+
+      <section id="contact">
+        <h3>Contact</h3>
+        <div class="contact-container">
+          <div class="contact-map">
+            <h4>How to find us</h4>
+            <p>
+              R. Correia Teles 70A, <br />
+              1350-097 Lisboa, Portugal
+            </p>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3112.933886549888!2d-9.170806924650401!3d38.71932685719241!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19335d7bafb673%3A0x2daa48ea97265283!2sR.%20Correia%20Teles%2070A%2C%201350-097%20Lisboa%2C%20B%E1%BB%93%20%C4%90%C3%A0o%20Nha!5e0!3m2!1svi!2s!4v1695368766559!5m2!1svi!2s"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="contact-socials">
+            <h4>Follow us on social media</h4>
+            <ul>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">TikTok</a></li>
+              <li><a href="#">Twitter</a></li>
+            </ul>
+
+            <h4>Join our community</h4>
+            <ul>
+              <li><a href="#">WhatsApp Group</a></li>
+              <li><a href="#">Telegram Chat</a></li>
+            </ul>
+
+            <h4>Have any questions</h4>
+            <ul>
+              <li><a href="#">Send an email</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="copyright">
+        <img src="./resources/logo.svg" alt="pottery club logo" />
+        <span>Copyright 2023</span>
+      </div>
+      <span class="design">Designed and developed by Vngelline</span>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
